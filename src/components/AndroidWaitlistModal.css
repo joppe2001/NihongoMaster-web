@@ -36,7 +36,7 @@
   border-radius: 999px;
   background: var(--paper);
   color: var(--text-primary);
-  font-family: 'Syne', sans-serif;
+  font-family: var(--font-sans);
   font-weight: 800;
   font-size: 16px;
   line-height: 1;
@@ -57,7 +57,7 @@
 }
 
 .wl__title {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--font-sans);
   font-size: 28px;
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -85,7 +85,7 @@
   gap: 12px;
   align-items: flex-start;
   color: var(--text-primary);
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-sans);
   font-weight: 500;
   font-size: 14.5px;
   line-height: 1.45;

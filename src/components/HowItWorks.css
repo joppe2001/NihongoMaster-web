@@ -62,7 +62,7 @@
 }
 
 .how__step-num {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--font-sans);
   font-size: 36px;
   font-weight: 800;
   line-height: 1;
@@ -78,7 +78,7 @@
 }
 
 .how__step-title {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--font-sans);
   font-size: 22px;
   font-weight: 800;
   color: var(--text-primary);
@@ -129,7 +129,7 @@
   background: var(--accent-2);
   border: 2px solid #000;
   border-radius: 999px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-weight: 700;
   font-size: 11px;
   letter-spacing: 0.16em;
@@ -151,7 +151,7 @@
   border: var(--border-thin);
   border-radius: var(--radius);
   box-shadow: 3px 3px 0 0 var(--ink);
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-sans);
   font-weight: 800;
   color: var(--text-primary);
 }
@@ -208,7 +208,7 @@
 }
 
 .how-mock__step-label {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-sans);
   font-weight: 600;
   color: var(--text-primary);
 }
@@ -234,7 +234,7 @@
 }
 
 .how-mock__rev-meta {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-sans);
   color: var(--text-secondary);
   font-size: 15px;
 }
@@ -243,7 +243,7 @@
   padding: 4px 10px;
   border: var(--border-thin);
   border-radius: 999px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-weight: 700;
   font-size: 11px;
   letter-spacing: 0.12em;

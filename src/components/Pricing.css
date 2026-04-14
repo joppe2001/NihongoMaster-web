@@ -76,7 +76,7 @@
 }
 
 .plan__name {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--font-sans);
   font-size: 32px;
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -97,7 +97,7 @@
 }
 
 .plan__price-value {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--font-sans);
   font-size: 56px;
   font-weight: 800;
   letter-spacing: -0.03em;
@@ -106,7 +106,7 @@
 }
 
 .plan__price-cadence {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.14em;
@@ -133,7 +133,7 @@
   display: flex;
   gap: 12px;
   align-items: flex-start;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-sans);
   font-weight: 500;
   color: var(--text-primary);
   line-height: 1.4;

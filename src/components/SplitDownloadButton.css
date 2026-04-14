@@ -31,7 +31,7 @@
   justify-content: center;
   gap: 8px;
   padding: 16px 22px;
-  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-weight: 700;
   font-size: 17px;
   color: inherit;
@@ -117,7 +117,7 @@
 }
 
 .splitdl__item-label {
-  font-family: 'Syne', 'Space Grotesk', sans-serif;
+  font-family: var(--font-sans);
   font-weight: 800;
   font-size: 17px;
   letter-spacing: -0.01em;

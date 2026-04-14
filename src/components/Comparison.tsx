@@ -18,14 +18,15 @@ const ROWS: Row[] = [
     duo: 'no',
     wk: 'yes',
     anki: 'no',
-    note: 'Kana + kanji rules treated as first-class, not a language pack.',
+    note: 'Anki is a general flashcard platform; Duolingo teaches 40+ languages.',
   },
   {
     label: 'Full JLPT curriculum (N5 → N1)',
     nm: 'yes',
-    duo: 'partial',
+    duo: 'no',
     wk: 'partial',
     anki: 'no',
+    note: 'Duolingo Japanese reaches roughly N5. WaniKani covers kanji + vocab; no grammar, reading or listening track.',
   },
   {
     label: 'Timed JLPT mock tests',
@@ -38,22 +39,41 @@ const ROWS: Row[] = [
     label: 'Adaptive spaced repetition',
     nm: 'yes',
     duo: 'partial',
-    wk: 'yes',
+    wk: 'no',
     anki: 'yes',
+    note: 'WaniKani uses fixed intervals (4h → 4mo). Anki ships FSRS in-core since v23.10. Duolingo uses Half-Life Regression.',
   },
   {
     label: 'Stroke-order writing practice',
     nm: 'yes',
-    duo: 'no',
+    duo: 'yes',
     wk: 'no',
-    anki: 'partial',
+    anki: 'no',
+    note: 'Duolingo\u2019s guided trace is more polished. We cover more kanji + a free-draw canvas.',
   },
   {
-    label: 'High-quality Japanese voice audio',
+    label: 'Native Japanese voice audio',
     nm: 'yes',
-    duo: 'yes',
+    duo: 'partial',
     wk: 'yes',
     anki: 'partial',
+    note: 'WaniKani uses voice actors Kenichi & Kyoko. Anki has OS-level TTS; rich audio depends on shared decks.',
+  },
+  {
+    label: 'Hand-crafted kanji mnemonics',
+    nm: 'no',
+    duo: 'no',
+    wk: 'yes',
+    anki: 'partial',
+    note: 'WaniKani\u2019s Tofugu mnemonic stories are the gold standard. We give context, not stories \u2014 yet.',
+  },
+  {
+    label: 'Free cross-device sync',
+    nm: 'no',
+    duo: 'yes',
+    wk: 'yes',
+    anki: 'yes',
+    note: 'AnkiWeb is free. Duolingo & WaniKani sync via account. Ours arrives in the future Pro tier.',
   },
   {
     label: 'Works fully offline',
@@ -61,6 +81,7 @@ const ROWS: Row[] = [
     duo: 'no',
     wk: 'no',
     anki: 'yes',
+    note: 'Anki Desktop, AnkiDroid and AnkiMobile all work fully offline. AnkiWeb sync is optional.',
   },
   {
     label: 'No forced sign-in to start',
@@ -128,8 +149,8 @@ export const Comparison: React.FC = () => {
         </div>
 
         <p className="vs__disclaimer mono">
-          Competitors are great tools for different needs. This table reflects our read as of
-          2026-04 based on public product pages — YMMV.
+          Competitors are great tools for different needs. Verified against official docs &
+          knowledge bases (Apr 2026). Notice an error? Open an issue on GitHub.
         </p>
       </div>
     </section>

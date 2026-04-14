@@ -25,7 +25,7 @@
 .vs__table thead th {
   background: #0d0a0c;
   color: #fff4f8;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.14em;
@@ -58,7 +58,7 @@
 .vs__row-label {
   text-align: left;
   padding: 16px 24px;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-sans);
   font-weight: 600;
   color: var(--text-primary);
   font-size: 15px;
@@ -96,7 +96,7 @@
   border: var(--border-thin);
   border-radius: 999px;
   box-shadow: 2px 2px 0 0 var(--ink);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-weight: 800;
   font-size: 14px;
 }

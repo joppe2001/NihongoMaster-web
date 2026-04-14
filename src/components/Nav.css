@@ -38,7 +38,7 @@
 }
 
 .site-nav__wordmark {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--font-sans);
   font-size: 22px;
   font-weight: 800;
   padding: 2px 10px;
@@ -62,7 +62,7 @@
 }
 
 .site-nav__link {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-sans);
   font-weight: 600;
   font-size: 15px;
   color: var(--text-primary);
