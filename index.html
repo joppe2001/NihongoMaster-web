@@ -11,7 +11,7 @@
     <title>Nihongo Master — Learn Japanese, your way (N5 to N1)</title>
     <meta
       name="description"
-      content="A guided, adaptive Japanese learning app for iOS, Android and desktop. Kana, kanji, grammar, vocabulary, JLPT mock tests and smart spaced repetition — offline-first, no account required."
+      content="Learn Japanese from kana to JLPT N1 with guided lessons, smart review and mock tests. Offline-first. Free core on iOS, Android and desktop."
     />
     <meta
       name="keywords"
@@ -26,7 +26,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="mask-icon" href="/favicon.svg" color="#b8a9fa" />
 
-    <!-- Open Graph (Facebook, LinkedIn, Discord, iMessage, Slack) -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Nihongo Master" />
     <meta property="og:locale" content="en_US" />
@@ -35,7 +35,7 @@
     <meta property="og:title" content="Nihongo Master — Learn Japanese, your way" />
     <meta
       property="og:description"
-      content="Guided journey from あ to N1. Kana, kanji, grammar, JLPT mock tests and adaptive review. Offline-first. No account needed."
+      content="Kana, kanji, grammar, JLPT mock tests and adaptive review. Offline-first. No account needed."
     />
     <meta property="og:image" content="https://nihongomaster.org/og.png" />
     <meta property="og:image:secure_url" content="https://nihongomaster.org/og.png" />
@@ -49,7 +49,7 @@
     <meta name="twitter:title" content="Nihongo Master — Learn Japanese, your way" />
     <meta
       name="twitter:description"
-      content="Guided journey from あ to N1. Kana, kanji, grammar, JLPT mock tests and adaptive review. Offline-first. No account needed."
+      content="Kana, kanji, grammar, JLPT mock tests and adaptive review. Offline-first. No account needed."
     />
     <meta name="twitter:image" content="https://nihongomaster.org/og.png" />
     <meta name="twitter:image:alt" content="Nihongo Master — 日本語 Master. Learn Japanese your way." />
@@ -62,7 +62,7 @@
       rel="stylesheet"
     />
 
-    <!-- Structured data: Organization + SoftwareApplication + WebSite -->
+    <!-- Structured data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -118,9 +118,219 @@
         ]
       }
     </script>
+
+    <style>
+      /* Hide the static pre-render shell once React hydrates the root.
+         React wipes #root's children on mount, so this is just to avoid
+         any brief flash of unstyled content on slow connections. */
+      .seo-shell { font-family: 'Inter', system-ui, sans-serif; color: #0b0a0e; background: #fffdf5; }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><div class="seo-shell">
+      <header>
+        <a href="/" aria-label="Nihongo Master home"><strong>日本語 Master</strong></a>
+        <nav aria-label="Primary">
+          <a href="#features">Features</a>
+          <a href="#how">How it works</a>
+          <a href="#vs">vs Others</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="#download">Get the app</a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="top">
+          <p><small>N5 → N1 · Built for Japanese</small></p>
+          <h1>Nihongo Master — Learn Japanese, your way.</h1>
+          <p>
+            A guided, adaptive Japanese learning app that actually teaches you Japanese —
+            hiragana, katakana, kanji, grammar, vocabulary, listening, writing — and prepares
+            you for the Japanese-Language Proficiency Test (JLPT) from N5 through N1.
+            Offline-first. No account required to start.
+          </p>
+          <p>
+            <a href="#download">Start learning free</a> ·
+            <a href="#demo">Try the quick hiragana demo</a>
+          </p>
+          <p>
+            <strong>2,136</strong> kanji covered · <strong>N5 — N1</strong> JLPT levels ·
+            <strong>100%</strong> offline core
+          </p>
+        </section>
+
+        <section id="features">
+          <h2>Everything you need to learn Japanese, in one app</h2>
+          <p>
+            Nihongo Master is not a flashcard deck, and it is not a gamified drill machine. It
+            is a real curriculum backed by real tools, designed around how Japanese is actually
+            written, spoken, and tested.
+          </p>
+          <article>
+            <h3>Guided Journey (たび)</h3>
+            <p>
+              A hand-crafted roadmap across all five JLPT levels. Each checkpoint introduces
+              characters, vocabulary, grammar, reading and a mini-quiz — in the order they
+              actually build on each other.
+            </p>
+          </article>
+          <article>
+            <h3>Smart review — adaptive spaced repetition (復習)</h3>
+            <p>
+              A Thompson-Sampling recommender picks what to drill next and when. Tricky items
+              resurface more often; mastered items wait patiently.
+            </p>
+          </article>
+          <article>
+            <h3>Kanji, deeply (漢字)</h3>
+            <p>
+              Every N5–N1 kanji with readings, meanings, stroke-order animation, compound
+              words, and a writing pad you can practice on. 2,000+ kanji total.
+            </p>
+          </article>
+          <article>
+            <h3>Timed JLPT mock tests (模擬試験)</h3>
+            <p>
+              Full-length practice for N5 through N1: vocabulary, grammar, reading, and
+              listening — with a continue-after-each-question flow that mirrors the real exam.
+            </p>
+          </article>
+          <article>
+            <h3>Sentence generator (作文)</h3>
+            <p>
+              Instead of canned example sentences, the app composes them from vocabulary and
+              grammar you have actually learned — so every sentence is readable for you today.
+            </p>
+          </article>
+          <article>
+            <h3>Natural Japanese voices (音声)</h3>
+            <p>
+              High-quality VOICEVOX voices read every vocabulary item and example sentence —
+              so your ear learns alongside your eyes.
+            </p>
+          </article>
+          <article>
+            <h3>Stroke-order writing practice (書き順)</h3>
+            <p>
+              Trace kana and kanji at your own pace with a guided stroke-order canvas. Real
+              muscle memory, not copy-paste.
+            </p>
+          </article>
+          <article>
+            <h3>Honest progress tracking</h3>
+            <p>
+              Heatmap, goals, weak items and review forecast. See what is slipping and what
+              is coming up. No fake streaks — real signal about what to study next.
+            </p>
+          </article>
+          <article>
+            <h3>Works offline</h3>
+            <p>
+              Content, progress and audio live on your device. No account needed to start, no
+              connection needed to learn. Your data stays yours.
+            </p>
+          </article>
+        </section>
+
+        <section id="how">
+          <h2>How Nihongo Master works</h2>
+          <ol>
+            <li>
+              <strong>Tell us where you are.</strong> Start at zero or skip the kana you
+              already know. A gentle diagnostic places you on the curriculum so you never sit
+              through what you already have.
+            </li>
+            <li>
+              <strong>Follow the Journey.</strong> Short, focused lessons drip in new
+              characters, vocabulary and grammar in the order they actually teach each other.
+              Checkpoints make sure nothing slips.
+            </li>
+            <li>
+              <strong>Let the app remember for you.</strong> Smart review resurfaces shaky
+              items before they disappear. Mock tests calibrate you against real JLPT pacing.
+              No streak shame, no guilt engine.
+            </li>
+          </ol>
+        </section>
+
+        <section id="vs">
+          <h2>How it compares to Duolingo, WaniKani and Anki</h2>
+          <p>
+            Every Japanese-learning tool has trade-offs. Nihongo Master is built specifically
+            for Japanese — kana and kanji are treated as first-class, not a language pack.
+            You get the full JLPT curriculum (N5 to N1), timed mock tests, stroke-order
+            writing, real Japanese voice audio, and everything works fully offline — without
+            a forced sign-in, ads, or guilt-trip streaks.
+          </p>
+        </section>
+
+        <section id="pricing">
+          <h2>Pricing — the learning is free</h2>
+          <p>
+            Everything you need to go from your first あ to passing N1 is in the free tier:
+            the full JLPT N5 → N1 curriculum, adaptive spaced repetition, 2,000+ kanji with
+            stroke order, timed JLPT mock tests, natural-voice audio, offline-first on-device
+            storage, and no account required. No credit card, no trial clock.
+          </p>
+          <p>
+            A Pro tier will arrive later for people who want cloud sync across devices,
+            premium themes, and quality-of-life extras. The core curriculum stays free for
+            everyone, forever.
+          </p>
+        </section>
+
+        <section id="faq">
+          <h2>Frequently asked questions</h2>
+          <h3>Is Nihongo Master free?</h3>
+          <p>
+            Yes — the core curriculum is free. Hiragana, katakana, kanji, vocabulary,
+            grammar, the guided journey, smart review, and JLPT mock tests work without an
+            account. A Pro tier with optional extras like cloud sync is in the works.
+          </p>
+          <h3>Do I need to sign up?</h3>
+          <p>
+            No. You can install the app and start studying immediately. You only create an
+            account if you later opt into cloud sync — and even then, your learning still
+            works fully offline.
+          </p>
+          <h3>Which JLPT levels does it cover?</h3>
+          <p>
+            All of them — N5 through N1. Each level has dedicated vocabulary, grammar and
+            kanji, plus mock tests that mirror the real exam format.
+          </p>
+          <h3>Which platforms are supported?</h3>
+          <p>
+            iOS and Android are live today. Desktop builds for macOS, Windows and Linux are
+            in beta. Everything shares one account when you opt into cloud sync later.
+          </p>
+          <h3>Does it work offline?</h3>
+          <p>
+            Yes. Everything that matters for daily study — lessons, review, writing practice
+            and audio — is on-device after install. No connection needed to learn.
+          </p>
+        </section>
+
+        <section id="download">
+          <h2>Download Nihongo Master</h2>
+          <p>
+            <a href="https://apps.apple.com/us/app/nihonmaster/id6761620677">Download for iOS (App Store)</a> ·
+            Android closed beta (join the waitlist) ·
+            <a href="https://github.com/joppe2001/NihongoMaster/releases">Desktop (macOS, Windows, Linux) from GitHub Releases</a>
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          <a href="#/privacy">Privacy Policy</a> ·
+          <a href="#/terms">Terms of Service</a> ·
+          <a href="https://github.com/joppe2001/NihongoMaster">GitHub</a> ·
+          <a href="https://github.com/joppe2001/NihongoMaster/releases">Release notes</a>
+        </p>
+        <p>© 2026 Nihongo Master · Learn Japanese, your way.</p>
+      </footer>
+    </div></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
