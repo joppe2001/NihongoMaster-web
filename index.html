@@ -3,18 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#fffdf5" />
-    <title>Nihongo Master — Learn Japanese, your way</title>
-    <meta name="description" content="A guided, adaptive Japanese learning app that takes you from あ to N1. Offline-first, hand-crafted content, no account required to start." />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#fffdf5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#190f16" media="(prefers-color-scheme: dark)" />
+
+    <!-- Primary -->
+    <title>Nihongo Master — Learn Japanese, your way (N5 to N1)</title>
+    <meta
+      name="description"
+      content="A guided, adaptive Japanese learning app for iOS, Android and desktop. Kana, kanji, grammar, vocabulary, JLPT mock tests and smart spaced repetition — offline-first, no account required."
+    />
+    <meta
+      name="keywords"
+      content="Japanese learning app, JLPT, hiragana, katakana, kanji, N5, N4, N3, N2, N1, spaced repetition, Japanese flashcards, learn Japanese offline, Japanese grammar, stroke order"
+    />
+    <meta name="author" content="Joppe Montezinos" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://nihongomaster.org/" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="mask-icon" href="/favicon.svg" color="#b8a9fa" />
+
+    <!-- Open Graph (Facebook, LinkedIn, Discord, iMessage, Slack) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Nihongo Master" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <meta property="og:url" content="https://nihongomaster.org/" />
     <meta property="og:title" content="Nihongo Master — Learn Japanese, your way" />
-    <meta property="og:description" content="Guided Journey, smart SRS, JLPT mock tests, stroke-order writing, and a sentence generator that adapts to what you know." />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta
+      property="og:description"
+      content="Guided journey from あ to N1. Kana, kanji, grammar, JLPT mock tests and adaptive review. Offline-first. No account needed."
+    />
+    <meta property="og:image" content="https://nihongomaster.org/og.png" />
+    <meta property="og:image:secure_url" content="https://nihongomaster.org/og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Nihongo Master — 日本語 Master. Learn Japanese your way." />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nihongo Master — Learn Japanese, your way" />
+    <meta
+      name="twitter:description"
+      content="Guided journey from あ to N1. Kana, kanji, grammar, JLPT mock tests and adaptive review. Offline-first. No account needed."
+    />
+    <meta name="twitter:image" content="https://nihongomaster.org/og.png" />
+    <meta name="twitter:image:alt" content="Nihongo Master — 日本語 Master. Learn Japanese your way." />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Structured data: Organization + SoftwareApplication + WebSite -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://nihongomaster.org/#org",
+            "name": "Nihongo Master",
+            "url": "https://nihongomaster.org/",
+            "logo": "https://nihongomaster.org/apple-touch-icon.png",
+            "sameAs": [
+              "https://github.com/joppe2001/NihongoMaster",
+              "https://apps.apple.com/us/app/nihonmaster/id6761620677"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://nihongomaster.org/#site",
+            "url": "https://nihongomaster.org/",
+            "name": "Nihongo Master",
+            "description": "A guided, adaptive Japanese learning app for iOS, Android and desktop.",
+            "publisher": { "@id": "https://nihongomaster.org/#org" },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://nihongomaster.org/#app",
+            "name": "Nihongo Master",
+            "applicationCategory": "EducationalApplication",
+            "applicationSubCategory": "Language Learning",
+            "operatingSystem": "iOS, Android, macOS, Windows, Linux",
+            "url": "https://nihongomaster.org/",
+            "downloadUrl": "https://nihongomaster.org/#download",
+            "description": "Guided journey from kana to JLPT N1 with adaptive spaced repetition, mock tests, stroke-order practice and natural voice audio. Offline-first.",
+            "featureList": [
+              "Guided journey N5 to N1",
+              "Adaptive spaced repetition",
+              "2000+ kanji with stroke order",
+              "Timed JLPT mock tests",
+              "Stroke-order writing practice",
+              "Natural Japanese voice audio",
+              "Offline-first, no account required"
+            ],
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            },
+            "publisher": { "@id": "https://nihongomaster.org/#org" },
+            "inLanguage": ["en", "ja"]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

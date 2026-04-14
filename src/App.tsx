@@ -11,10 +11,12 @@ import { Footer } from './components/Footer';
 import { LegalPage } from './components/LegalPage';
 import { useTheme } from './hooks/useTheme';
 import { useHashRoute } from './hooks/useHashRoute';
+import { useDocumentHead } from './hooks/useDocumentHead';
 
 export const App: React.FC = () => {
   const { mode, toggle } = useTheme();
   const route = useHashRoute();
+  useDocumentHead(route);
 
   return (
     <>

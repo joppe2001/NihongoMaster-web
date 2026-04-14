@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sources used to generate static assets — block from indexing, not from access.
+Disallow: /og.html
+Disallow: /apple-touch-icon.html
+
+Sitemap: https://nihongomaster.org/sitemap.xml
