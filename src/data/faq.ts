@@ -36,4 +36,8 @@ export const faq: FaqItem[] = [
     q: 'Can I contribute or report issues?',
     a: 'Yes — a public changelog, release notes, and issue tracker are on GitHub. Bug reports and feature requests from learners shape the roadmap.',
   },
+  {
+    q: 'What if I find something wrong in a lesson?',
+    a: "Tell us. The curriculum is hand-crafted by a tiny team and ships new content every week — which means some translations, example sentences and explanations will be imperfect, out of date, or occasionally wrong. If you spot something off, email joppe.montezinos@gmail.com or open an issue on GitHub. Real corrections go into the next build. In the meantime, when something matters (exam prep, formal writing, a job interview), cross-reference with a textbook or a native speaker. Don't trust a single app — cross-referencing is a good habit regardless.",
+  },
 ];

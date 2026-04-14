@@ -1,0 +1,63 @@
+.errata {
+  background: var(--paper);
+}
+
+.errata__card {
+  background: var(--surface-subtle);
+  border: var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  padding: clamp(28px, 5vw, 48px);
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.errata__badge {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 6px 12px;
+  background: var(--accent-2);
+  border: 2px solid #000;
+  border-radius: 999px;
+  box-shadow: 3px 3px 0 0 #000;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: #0b0a0e;
+}
+
+.errata__title {
+  font-family: var(--font-sans);
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--text-primary);
+  margin-top: 4px;
+}
+
+.errata__body {
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.errata__body em {
+  font-style: italic;
+  color: var(--text-primary);
+}
+
+.errata__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.errata__cta {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}

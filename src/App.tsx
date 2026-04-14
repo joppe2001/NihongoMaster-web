@@ -7,6 +7,7 @@ import { HowItWorks } from './components/HowItWorks';
 import { Comparison } from './components/Comparison';
 import { Pricing } from './components/Pricing';
 import { FAQ } from './components/FAQ';
+import { HonestNote } from './components/HonestNote';
 import { Footer } from './components/Footer';
 import { LegalPage } from './components/LegalPage';
 import { useTheme } from './hooks/useTheme';
@@ -30,6 +31,7 @@ export const App: React.FC = () => {
           <Comparison />
           <Pricing />
           <FAQ />
+          <HonestNote />
         </main>
       )}
       {route === 'privacy' && <LegalPage slug="privacy" />}
