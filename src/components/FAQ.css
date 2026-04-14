@@ -1,0 +1,89 @@
+.faq {
+  background: var(--surface-subtle);
+}
+
+.faq__head {
+  max-width: 640px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.faq__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.faq__item {
+  background: var(--paper-strong);
+  border: var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.faq__item:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow);
+}
+
+.faq__item--open {
+  background: color-mix(in srgb, var(--accent-2) 16%, var(--paper-strong));
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow);
+}
+
+.faq__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  padding: 22px 24px;
+  background: transparent;
+  color: var(--text-primary);
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq__plus {
+  width: 36px;
+  height: 36px;
+  background: var(--paper);
+  border: var(--border-thin);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1;
+  box-shadow: 2px 2px 0 0 var(--ink);
+  color: var(--text-primary);
+  flex-shrink: 0;
+}
+
+.faq__item--open .faq__plus {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.faq__panel {
+  overflow: hidden;
+}
+
+.faq__panel p {
+  padding: 0 24px 24px 24px;
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.65;
+}

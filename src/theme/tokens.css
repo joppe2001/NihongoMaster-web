@@ -1,0 +1,91 @@
+/* Nihongo Master — brutalist web tokens.
+   Light = "fuji" (lavender/yellow/pink). Dark = "sakura" (rose/amber/blush).
+   Ported from src/styles/brutalist.css to keep site + app visually one family. */
+
+:root,
+[data-theme='fuji'][data-mode='light'] {
+  /* Surfaces */
+  --paper: #fffdf5;
+  --paper-strong: #ffffff;
+  --surface-subtle: #f3ecde;
+  --surface-muted: #e4dac8;
+  --surface-elevated: #ffffff;
+
+  /* Structure */
+  --ink: #000000;
+  --ink-soft: #1c1c1e;
+  --border: 3px solid var(--ink);
+  --border-thin: 2px solid var(--ink);
+
+  /* Fuji accents */
+  --accent: #b8a9fa;
+  --accent-2: #ffd23f;
+  --accent-3: #ff90e8;
+  --accent-contrast: #000000;
+
+  /* Semantic */
+  --success: #88d498;
+  --warning: #ffa552;
+  --danger: #ff6b6b;
+  --info: #74b9ff;
+
+  /* Text */
+  --text-primary: #0b0a0e;
+  --text-secondary: #2f2a3a;
+  --text-tertiary: #6b6280;
+  --text-inverse: #fffdf5;
+
+  /* Hard shadows */
+  --shadow-color: var(--ink);
+  --shadow-sm: 3px 3px 0 0 var(--shadow-color);
+  --shadow: 6px 6px 0 0 var(--shadow-color);
+  --shadow-lg: 10px 10px 0 0 var(--shadow-color);
+  --shadow-xl: 14px 14px 0 0 var(--shadow-color);
+
+  /* Radii — soft brutalism (chunky but rounded like the app) */
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+
+  /* Layout */
+  --container: 1200px;
+  --section-gap: 120px;
+}
+
+[data-theme='sakura'][data-mode='dark'],
+[data-mode='dark'] {
+  --paper: #190f16;
+  --paper-strong: #261621;
+  --surface-subtle: #342032;
+  --surface-muted: #45283f;
+  --surface-elevated: #2e1a29;
+
+  --ink: #050505;
+  --ink-soft: #0d0a0c;
+
+  --accent: #ff8fb5;
+  --accent-2: #ffd36b;
+  --accent-3: #ffc0d6;
+  --accent-contrast: #050505;
+
+  --success: #9be38d;
+  --warning: #ffb07a;
+  --danger: #ff8a8a;
+  --info: #9cd0ff;
+
+  --text-primary: #fff4f8;
+  --text-secondary: #e3c8d5;
+  --text-tertiary: #b690a5;
+  --text-inverse: #190f16;
+
+  /* Shadows flip to accent-tinted so they read on dark paper */
+  --shadow-color: #000000;
+  --shadow-sm: 3px 3px 0 0 var(--shadow-color);
+  --shadow: 6px 6px 0 0 var(--shadow-color);
+  --shadow-lg: 10px 10px 0 0 var(--shadow-color);
+  --shadow-xl: 14px 14px 0 0 var(--shadow-color);
+
+  --border: 3px solid #000000;
+  --border-thin: 2px solid #000000;
+}
