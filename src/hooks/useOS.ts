@@ -64,13 +64,13 @@ export interface DesktopAssetDescriptor {
  * Describes which release assets match each OS. Filenames in the
  * joppe2001/NihongoMaster releases follow the Tauri bundler convention with
  * a version in the middle:
- *   NihongoMaster_0.3.7_universal.dmg
- *   NihongoMaster_0.3.7_x64_en-US.msi
- *   NihongoMaster_0.3.7_x64-setup.exe
- *   NihongoMaster_0.3.7_amd64.AppImage
- *   NihongoMaster_0.3.7_amd64.deb
- *   NihongoMaster_0.3.7_amd64.flatpak
- *   NihongoMaster-0.3.7-1.x86_64.rpm
+ *   NihongoMaster_0.3.8_universal.dmg
+ *   NihongoMaster_0.3.8_x64_en-US.msi
+ *   NihongoMaster_0.3.8_x64-setup.exe
+ *   NihongoMaster_0.3.8_amd64.AppImage
+ *   NihongoMaster_0.3.8_amd64.deb
+ *   NihongoMaster_0.3.8_amd64.flatpak
+ *   NihongoMaster-0.3.8-1.x86_64.rpm
  *
  * We match by suffix patterns so version bumps don't break anything.
  */

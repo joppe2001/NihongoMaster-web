@@ -183,7 +183,7 @@ export const Footer: React.FC = () => {
             <span className="mono">
               {release?.published_at
                 ? `Updated ${new Date(release.published_at).toISOString().slice(0, 10)}`
-                : 'v0.3.7'}
+                : 'v0.3.8'}
             </span>
           </div>
         </div>
