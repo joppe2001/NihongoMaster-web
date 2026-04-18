@@ -21,6 +21,10 @@ export const faq: FaqItem[] = [
     a: 'On your device. Progress, settings, and audio cache stay local. If you turn on cloud sync later, it is encrypted and opt-in — you can delete your account data from inside the app at any time.',
   },
   {
+    q: 'Where does the Japanese content come from? Is it AI-generated?',
+    a: 'No — the core Japanese content is sourced from the same openly-licensed datasets that power professional dictionaries and native-speaker tools. Word definitions and readings come from JMdict, kanji data from KANJIDIC2 (both maintained by the Electronic Dictionary Research and Development Group in Japan), native-written example sentences from the Tatoeba Project, and precise furigana alignment from JmdictFurigana. Pronunciation uses VOICEVOX, a Japanese voice synthesis project used by native creators. Full attribution is built into the app under Settings → Credits.',
+  },
+  {
     q: 'How is this different from Anki or Duolingo?',
     a: 'Anki gives you flashcards but no curriculum. Duolingo gives you a curriculum but limited depth. Nihongo Master is built specifically for Japanese — it teaches kana and kanji properly, adapts to your gaps, and actually prepares you for the JLPT.',
   },

@@ -5,6 +5,7 @@ import { InteractiveDemo } from './components/InteractiveDemo';
 import { FeatureGrid } from './components/FeatureGrid';
 import { HowItWorks } from './components/HowItWorks';
 import { Comparison } from './components/Comparison';
+import { NativeSources } from './components/NativeSources';
 import { Pricing } from './components/Pricing';
 import { FAQ } from './components/FAQ';
 import { HonestNote } from './components/HonestNote';
@@ -29,6 +30,7 @@ export const App: React.FC = () => {
           <FeatureGrid />
           <HowItWorks />
           <Comparison />
+          <NativeSources />
           <Pricing />
           <FAQ />
           <HonestNote />

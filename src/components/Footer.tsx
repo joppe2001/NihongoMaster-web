@@ -126,6 +126,7 @@ export const Footer: React.FC = () => {
                 <li><a href="#features">Features</a></li>
                 <li><a href="#how">How it works</a></li>
                 <li><a href="#vs">vs Others</a></li>
+                <li><a href="#sources">Sources</a></li>
                 <li><a href="#pricing">Pricing</a></li>
               </ul>
             </div>

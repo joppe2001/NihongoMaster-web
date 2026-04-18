@@ -15,6 +15,7 @@ const links = [
   { href: '#features', label: 'Features' },
   { href: '#how', label: 'How it works' },
   { href: '#vs', label: 'vs Others' },
+  { href: '#sources', label: 'Sources' },
   { href: '#pricing', label: 'Pricing' },
   { href: '#faq', label: 'FAQ' },
 ];
