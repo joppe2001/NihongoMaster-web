@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRightIcon, SparkleIcon } from './icons';
+import { ArrowRightIcon, CheckIcon, SparkleIcon } from './icons';
 import { PhoneFrame } from './PhoneFrame';
 import './Hero.css';
 
@@ -10,11 +10,36 @@ export const Hero: React.FC = () => {
       <div className="diag-stripes" aria-hidden />
       <div className="container hero__inner">
         <div className="hero__copy">
-          <motion.span
-            className="eyebrow"
+          <motion.a
+            href="#sources"
+            className="hero__trust"
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.05 }}
+            aria-label="Learn where our Japanese content comes from"
+          >
+            <span className="hero__trust-seal" aria-hidden>
+              <CheckIcon size={14} />
+            </span>
+            <span className="hero__trust-text">
+              <span className="hero__trust-lead">
+                Built on native Japanese sources
+              </span>
+              <span className="hero__trust-sub mono">
+                JMdict · KANJIDIC2 · Tatoeba
+              </span>
+            </span>
+            <span className="hero__trust-cta mono">
+              See sources
+              <ArrowRightIcon size={12} />
+            </span>
+          </motion.a>
+
+          <motion.span
+            className="eyebrow hero__eyebrow"
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.08 }}
           >
             N5 → N1 · Built for Japanese
           </motion.span>
@@ -36,9 +61,10 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            A guided, adaptive Japanese learning app that actually teaches you Japanese — kana,
-            kanji, grammar, vocabulary, listening, writing — and prepares you for the JLPT.
-            Offline-first. No account required to start.
+            A guided, adaptive Japanese learning app built on the same openly-licensed
+            dictionaries, sentence corpora and native voice models used by professional
+            Japanese tools. Kana, kanji, grammar, vocabulary, listening, writing, and full
+            JLPT prep. Offline-first. No account required.
           </motion.p>
 
           <motion.div
