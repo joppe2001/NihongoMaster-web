@@ -41,11 +41,22 @@ export const features: Feature[] = [
     id: 'srs',
     title: 'Smart review',
     jp: '復習',
-    tagline: 'Adaptive spaced repetition',
+    tagline: 'FSRS spaced repetition',
     description:
-      'A Thompson-Sampling recommender picks what to drill next and when. Tricky items resurface more often; mastered items wait patiently.',
+      'Reviews are scheduled around your own forgetting curve, not a fixed timeline. Same algorithm Anki adopted in 2024. Tricky items resurface more often, mastered items wait patiently.',
     icon: BrainIcon,
     color: 'info',
+    tier: 'core',
+  },
+  {
+    id: 'smart-practice',
+    title: 'Practice that fits you',
+    jp: '適応',
+    tagline: 'Adaptive picks across 12 sub-skills',
+    description:
+      'Practice items are picked using Item Response Theory, the same psychometrics behind adaptive JLPT and TOEFL screening tools. The app tracks twelve sub-skills like reading kana, kanji meanings, particles, and verb forms separately, so you can see exactly what is sticking instead of just how many cards you have touched.',
+    icon: ChartIcon,
+    color: 'accent-2',
     tier: 'core',
   },
   {

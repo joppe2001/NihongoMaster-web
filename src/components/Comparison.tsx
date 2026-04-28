@@ -44,6 +44,22 @@ const ROWS: Row[] = [
     note: 'WaniKani uses fixed intervals (4h → 4mo). Anki ships FSRS in-core since v23.10. Duolingo uses Half-Life Regression.',
   },
   {
+    label: 'Adaptive practice picker (IRT)',
+    nm: 'yes',
+    duo: 'partial',
+    wk: 'no',
+    anki: 'no',
+    note: 'Practice items are picked using Item Response Theory, the same psychometrics behind adaptive JLPT and TOEFL screening. Duolingo personalises lessons but does not use IRT.',
+  },
+  {
+    label: 'Per-skill mastery tracking',
+    nm: 'yes',
+    duo: 'no',
+    wk: 'no',
+    anki: 'no',
+    note: 'Twelve sub-skills (kana, kanji meanings, on/kun readings, vocab recognition, vocab production, particles, verb forms, listening, reading) tracked separately using Bayesian Knowledge Tracing.',
+  },
+  {
     label: 'Stroke-order writing practice',
     nm: 'yes',
     duo: 'yes',
