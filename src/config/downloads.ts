@@ -4,19 +4,17 @@ export const DOWNLOADS = {
   /** Live on the App Store. */
   ios: "https://apps.apple.com/us/app/nihonmaster/id6761620677",
 
-  /**
-   * Android closed testing waitlist.
-   *
-   * Recommended: create a Google Form that collects email + why-you-want-in,
-   * then paste its public link here. You can also use Tally.so or Typeform —
-   * anything that gives you a single URL.
-   *
-   * Fallback: a mailto link. Leave this value empty string if you prefer
-   * the mailto fallback handled in the modal.
-   */
-  androidWaitlistForm: "https://forms.gle/aerFXqdm1NyFsm287", // e.g. 'https://forms.gle/XXXXXXXXXX'
+  /** Live on Google Play. */
+  android: "https://play.google.com/store/apps/details?id=com.nihongomaster.app",
 
-  /** Email used for the mailto fallback (only used if androidWaitlistForm is empty). */
+  /**
+   * Legacy: kept for backwards compatibility in case the AndroidWaitlistModal
+   * is reintroduced for a future closed test. Currently unused since Android
+   * is live on Google Play.
+   */
+  androidWaitlistForm: "https://forms.gle/aerFXqdm1NyFsm287",
+
+  /** Email used for the mailto fallback in HonestNote when contactForm is empty. */
   androidWaitlistEmail: "joppe.montezinos@gmail.com",
 
   /**

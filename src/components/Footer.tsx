@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo } from 'react';
 import { ArrowRightIcon } from './icons';
 import { DOWNLOADS, githubLatestPage, githubReleasesBase } from '../config/downloads';
 import {
@@ -7,13 +7,11 @@ import {
   type DesktopAssetOption,
 } from '../hooks/useOS';
 import { findAsset, useLatestRelease } from '../hooks/useLatestRelease';
-import { AndroidWaitlistModal } from './AndroidWaitlistModal';
 import { SplitDownloadButton, type ResolvedAlternative } from './SplitDownloadButton';
 import './Footer.css';
 
 export const Footer: React.FC = () => {
   const os = useOS();
-  const [androidOpen, setAndroidOpen] = useState(false);
   const { release, loading } = useLatestRelease(
     DOWNLOADS.githubOwner,
     DOWNLOADS.githubRepo
@@ -74,15 +72,15 @@ export const Footer: React.FC = () => {
                 Download for iOS
                 <ArrowRightIcon size={16} />
               </a>
-              <button
-                type="button"
+              <a
+                href={DOWNLOADS.android}
+                target="_blank"
+                rel="noreferrer"
                 className="btn"
-                onClick={() => setAndroidOpen(true)}
-                aria-haspopup="dialog"
               >
-                Android beta — join waitlist
+                Download for Android
                 <ArrowRightIcon size={16} />
-              </button>
+              </a>
               {showSplit ? (
                 <SplitDownloadButton
                   primaryLabel={desktopLabel}
@@ -106,8 +104,8 @@ export const Footer: React.FC = () => {
               )}
             </div>
             <p className="ft__cta-note mono">
-              iOS live on the App Store · Android in closed testing · Desktop builds on
-              GitHub Releases
+              iOS on the App Store · Android on Google Play · Desktop builds on GitHub
+              Releases
             </p>
           </div>
 
@@ -189,8 +187,6 @@ export const Footer: React.FC = () => {
           </div>
         </div>
       </footer>
-
-      <AndroidWaitlistModal open={androidOpen} onClose={() => setAndroidOpen(false)} />
     </>
   );
 };
